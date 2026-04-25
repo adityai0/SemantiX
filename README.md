@@ -22,14 +22,10 @@ SemantiX/
 └── model/                         # Trained model weights & tokenizer (download separately)
 ```
 
-## Model Download Instructions
+## Generating the Model
 
-Due to its large size (~1GB), the trained XLM-RoBERTa model is not included directly in this repository.
-
-1. Download the pre-trained model files from this link:
-   [**Download SemantiX Model (Google Drive)**](#) *(Replace with actual link)*
-2. Extract the downloaded archive.
-3. Place the extracted contents into the `model/` directory at the root of the project.
+Due to its large size (~1GB), the trained XLM-RoBERTa model is not included directly in this repository. 
+You will need to generate the model files yourself by running the `model.ipynb` notebook before starting the Streamlit application. This will train the model and save the required artifacts into the `model/` directory.
 
 ## Setup & Run
 
@@ -61,7 +57,7 @@ Choose one of the following methods to run SemantiX:
    ```bash
    pip install -r requirements.txt
    ```
-4. **Download the model** (see instructions above) and place it in the `model/` directory.
+4. **Generate the model** by running `model.ipynb` (locally or on Colab) and ensure the outputs are in the `model/` directory.
 5. **Run the Streamlit app:**
    ```bash
    streamlit run streamlit_app.py
